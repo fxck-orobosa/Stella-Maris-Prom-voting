@@ -12,7 +12,69 @@
     button { padding: 10px 20px; font-size: 18px; margin-top: 20px; }
     #results { max-width: 700px; margin: 50px auto; }
     .hidden { display: none; }
-  </style>
+  <style>
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("prom-background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+
+  body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 0;
+  }
+
+  * {
+    z-index: 1;
+    position: relative;
+  }
+
+  h1, h2 {
+    margin-top: 40px;
+  }
+
+  .section {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .candidate {
+    margin: 8px 0;
+  }
+
+  button {
+    padding: 12px 24px;
+    font-size: 18px;
+    margin-top: 20px;
+    border: none;
+    background: #ff6b6b;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  #results {
+    max-width: 700px;
+    margin: 50px auto;
+  }
+
+  .hidden {
+    display: none;
+  }
+</style>
+
 </head>
 <body>
   <h1>Vote for Your Prom King & Queen</h1>
